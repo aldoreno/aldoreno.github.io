@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>lesson-learned on Endeavor</title>
-    <link>http://localhost:1313/categories/lesson-learned/</link>
+    <link>http://aldoreno.github.io/categories/lesson-learned/</link>
     <description>Recent content in lesson-learned on Endeavor</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/lesson-learned/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://aldoreno.github.io/categories/lesson-learned/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Employee Stock Options Plan  ESOP</title>
-      <link>http://localhost:1313/posts/2020/04/01/employee-stock-options-plan-esop/</link>
+      <link>http://aldoreno.github.io/posts/2020/04/01/employee-stock-options-plan-esop/</link>
       <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/2020/04/01/employee-stock-options-plan-esop/</guid>
+      <guid>http://aldoreno.github.io/posts/2020/04/01/employee-stock-options-plan-esop/</guid>
       <description>Odi bilang liat ini saja
 https://twitter.com/tesseralis/status/1228516954941427712?s=21
 Gw coba &amp;ldquo;terjemahkan&amp;rdquo; isi tweet yang direferensikan Odi ya.
@@ -24,30 +24,30 @@ A stock option gives an investor the right, but not the obligation, to buy or se
     
     <item>
       <title>Follow You</title>
-      <link>http://localhost:1313/posts/2016/03/07/follow-you/</link>
+      <link>http://aldoreno.github.io/posts/2016/03/07/follow-you/</link>
       <pubDate>Mon, 07 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/2016/03/07/follow-you/</guid>
+      <guid>http://aldoreno.github.io/posts/2016/03/07/follow-you/</guid>
       <description>Vocalist Oli Sykes shared in a track-by-track commentary with Spotify that he and Jordan Fish wrote “Follow You” while they were writing “Drown”. He also shared:
 And when it got to that certain point like “this fucking sucks and I don’t really want to do this anymore,” that’s when you have that realizations. I realized no matter how bad being together can sometimes get, the alternative is so much worse.</description>
     </item>
     
     <item>
       <title>Apa itu High Availability?</title>
-      <link>http://localhost:1313/posts/2015/11/21/apa-itu-high-availability/</link>
+      <link>http://aldoreno.github.io/posts/2015/11/21/apa-itu-high-availability/</link>
       <pubDate>Sat, 21 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/2015/11/21/apa-itu-high-availability/</guid>
+      <guid>http://aldoreno.github.io/posts/2015/11/21/apa-itu-high-availability/</guid>
       <description>Selama ini gw pikir High Availability (HA) semata-mata hanya mempersiapkan cadangan kalau bencana (disaster) muncul. Mempersiapkan cadangan dalam artian data backup. Ternyata pemahaman tersebut tidak sepenuhnya benar. Hal ini baru gw sadari setelah diberikan pekerjaan untuk membuat solusi kalau sampai layanan telekomunikasi yang digunakan tim Customer Service (CS) kena bencana.
 Hasil akhir yang diharapkan &amp;ndash; ingat selalu untuk berpikir dari hasil akhir yang diharapkan -- adalah: tim CS harus selalu dapat menggunakan layanan telekomunikasi.</description>
     </item>
     
     <item>
       <title>Stay Competitive</title>
-      <link>http://localhost:1313/posts/2014/10/05/stay-competitive/</link>
+      <link>http://aldoreno.github.io/posts/2014/10/05/stay-competitive/</link>
       <pubDate>Sun, 05 Oct 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/2014/10/05/stay-competitive/</guid>
+      <guid>http://aldoreno.github.io/posts/2014/10/05/stay-competitive/</guid>
       <description>how to stay relevant? how to stay competitive?
 what is competitive advantage? why should you care about it?
 okay, got it, how to do it?
@@ -58,10 +58,10 @@ how to create knowledge? how to capture knowledge? how to disseminate knowledge?
     
     <item>
       <title>Smartfren Haier CE81B on Ubuntu 12.04</title>
-      <link>http://localhost:1313/posts/2014/03/13/smartfren-haier-ce81b-ubuntu-linux/</link>
+      <link>http://aldoreno.github.io/posts/2014/03/13/smartfren-haier-ce81b-ubuntu-linux/</link>
       <pubDate>Thu, 13 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/2014/03/13/smartfren-haier-ce81b-ubuntu-linux/</guid>
+      <guid>http://aldoreno.github.io/posts/2014/03/13/smartfren-haier-ce81b-ubuntu-linux/</guid>
       <description>Setelah menghabiskan waktu berjam-jam, akhirnya bisa juga menggunakan modem yang satu ini di Ubuntu 12.04.
 Dari sekian banyak hasil pencarian Google, halaman yang satu ini yang akhirnya membuahkan hasil. Thanks!
 Berikut adalah beberapa catatan versi gw sendiri.
@@ -71,10 +71,10 @@ mode penyimpanan (storage mode) yang biasanya akan aktif di Windows/OSX. apabila
     
     <item>
       <title>Galih Maulana</title>
-      <link>http://localhost:1313/posts/2013/01/25/gm/</link>
+      <link>http://aldoreno.github.io/posts/2013/01/25/gm/</link>
       <pubDate>Fri, 25 Jan 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/2013/01/25/gm/</guid>
+      <guid>http://aldoreno.github.io/posts/2013/01/25/gm/</guid>
       <description>Disclaimer Tulisan dibuat semata-mata sebagai catatan bahwa saya pernah menjadi korban penipuan, dan tentunya dengan harapan agar catatan ini berguna bagi siapapun di masa depan yang kemungkinan terjebak dalam situasi yang sama dengan saya saat tulisan ini dibuat.
 Tulisan dibuat dengan kesadaran penuh bahwa saya adalah penduduk Negara Kesatuan Republik Indonesia yang punya hak dalam kebebasan berekspresi. Hal ini saya baca dalam buku berjudul Kebebasan Berekspresi Panduan Bagi Jurnalis dan Aktifis Kebebasan Berekspresi (Asosiasi Jurnalis Independen / AJI, cetakan pertama Maret 2010).</description>
     </item>

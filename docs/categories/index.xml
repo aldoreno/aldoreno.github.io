@@ -2,116 +2,116 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Endeavor</title>
-    <link>http://localhost:1313/categories/</link>
+    <link>http://aldoreno.github.io/categories/</link>
     <description>Recent content in Categories on Endeavor</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 20 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 20 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://aldoreno.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>notes</title>
-      <link>http://localhost:1313/categories/notes/</link>
+      <link>http://aldoreno.github.io/categories/notes/</link>
       <pubDate>Sat, 20 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/categories/notes/</guid>
+      <guid>http://aldoreno.github.io/categories/notes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>life</title>
-      <link>http://localhost:1313/categories/life/</link>
+      <link>http://aldoreno.github.io/categories/life/</link>
       <pubDate>Fri, 25 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/categories/life/</guid>
+      <guid>http://aldoreno.github.io/categories/life/</guid>
       <description></description>
     </item>
     
     <item>
       <title>travel</title>
-      <link>http://localhost:1313/categories/travel/</link>
+      <link>http://aldoreno.github.io/categories/travel/</link>
       <pubDate>Fri, 25 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/categories/travel/</guid>
+      <guid>http://aldoreno.github.io/categories/travel/</guid>
       <description></description>
     </item>
     
     <item>
       <title>random</title>
-      <link>http://localhost:1313/categories/random/</link>
+      <link>http://aldoreno.github.io/categories/random/</link>
       <pubDate>Sun, 14 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/categories/random/</guid>
+      <guid>http://aldoreno.github.io/categories/random/</guid>
       <description></description>
     </item>
     
     <item>
       <title>lesson-learned</title>
-      <link>http://localhost:1313/categories/lesson-learned/</link>
+      <link>http://aldoreno.github.io/categories/lesson-learned/</link>
       <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/categories/lesson-learned/</guid>
+      <guid>http://aldoreno.github.io/categories/lesson-learned/</guid>
       <description></description>
     </item>
     
     <item>
       <title>tips</title>
-      <link>http://localhost:1313/categories/tips/</link>
+      <link>http://aldoreno.github.io/categories/tips/</link>
       <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/categories/tips/</guid>
+      <guid>http://aldoreno.github.io/categories/tips/</guid>
       <description></description>
     </item>
     
     <item>
       <title>work</title>
-      <link>http://localhost:1313/categories/work/</link>
+      <link>http://aldoreno.github.io/categories/work/</link>
       <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/categories/work/</guid>
+      <guid>http://aldoreno.github.io/categories/work/</guid>
       <description></description>
     </item>
     
     <item>
       <title>shots</title>
-      <link>http://localhost:1313/categories/shots/</link>
+      <link>http://aldoreno.github.io/categories/shots/</link>
       <pubDate>Thu, 27 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/categories/shots/</guid>
+      <guid>http://aldoreno.github.io/categories/shots/</guid>
       <description></description>
     </item>
     
     <item>
       <title>story</title>
-      <link>http://localhost:1313/categories/story/</link>
+      <link>http://aldoreno.github.io/categories/story/</link>
       <pubDate>Thu, 27 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/categories/story/</guid>
+      <guid>http://aldoreno.github.io/categories/story/</guid>
       <description></description>
     </item>
     
     <item>
       <title>code</title>
-      <link>http://localhost:1313/categories/code/</link>
+      <link>http://aldoreno.github.io/categories/code/</link>
       <pubDate>Sat, 21 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/categories/code/</guid>
+      <guid>http://aldoreno.github.io/categories/code/</guid>
       <description></description>
     </item>
     
     <item>
       <title>technology</title>
-      <link>http://localhost:1313/categories/technology/</link>
+      <link>http://aldoreno.github.io/categories/technology/</link>
       <pubDate>Sat, 21 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/categories/technology/</guid>
+      <guid>http://aldoreno.github.io/categories/technology/</guid>
       <description></description>
     </item>
     
     <item>
       <title>review</title>
-      <link>http://localhost:1313/categories/review/</link>
+      <link>http://aldoreno.github.io/categories/review/</link>
       <pubDate>Thu, 13 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/categories/review/</guid>
+      <guid>http://aldoreno.github.io/categories/review/</guid>
       <description></description>
     </item>
     
