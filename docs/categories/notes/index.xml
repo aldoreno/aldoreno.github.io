@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>notes on Endeavor</title>
+    <link>https://aldoreno.github.io/categories/notes/</link>
+    <description>Recent content in notes on Endeavor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 20 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://aldoreno.github.io/categories/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>10 Rules of Studying</title>
+      <link>https://aldoreno.github.io/posts/2021/11/20/10-rules-of-studying/</link>
+      <pubDate>Sat, 20 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://aldoreno.github.io/posts/2021/11/20/10-rules-of-studying/</guid>
+      <description>10 Rules of Good Studying Use recall. After you read a page, look away and recall the main ideas. Highlight very little, and never highlight anything you haven’t put in your mind first by recalling. Try recalling main ideas when you are walking to class or in a different room from where you originally learned it. An ability to recall—to generate the ideas from inside yourself—is one of the key indicators of good learning.</description>
+    </item>
+    
+  </channel>
+</rss>

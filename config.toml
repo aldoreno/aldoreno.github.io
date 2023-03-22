@@ -1,0 +1,67 @@
+title = "Endeavor"
+baseURL = 'https://aldoreno.github.io/'
+languageCode = 'en-us'
+theme = "hugo-blog-awesome"
+
+publishDir="docs"
+
+# To enable Google Analytics 4 (gtag.js) provide G-MEASUREMENT_ID below.
+# To disable  Google Analytics, simply leave the field empty or remove the next line
+googleAnalytics = '' # G-MEASUREMENT_ID
+
+# Enable emojis globally
+enableEmoji = true
+
+ignoreErrors = ["error-remote-getjson"]
+
+# set markup.highlight.noClasses=false to enable code highlight
+[markup]
+  [markup.highlight]
+    lineNos = true
+    noClasses = false
+  [markup.goldmark.renderer]
+    unsafe = true
+
+[menu]
+  [[menu.main]] 
+    # The page reference (pageRef) is useful for menu highlighting
+    # When pageRef is set, setting `url` is optional; it will be used as a fallback if the page is not found.
+    pageRef="/"
+    name = 'Home'
+    url = '/'
+    weight = 10
+  [[menu.main]]
+    pageRef="posts"
+    name = 'Posts'
+    url = '/posts/'
+    weight = 20
+  [[menu.main]]
+    pageRef="about"
+    name = 'About'
+    url = '/pages/about-me'
+    weight = 30
+
+[params]
+  sitename = "Endeavor"
+  defaultColor = "dark" # set default color mode: dark or light
+  description = "Leonardo's public blog"
+
+[params.author]
+  avatar = "Leon-Small.jpg" # put the file in assets folder; also ensure that image has same height and width
+  # Note: image is not rendered if the resource(avatar image) is not found. No error is displayed.
+  intro = "ENDEAVOR"
+  name = "Leonardo"
+  description = "loner die younger"
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/aldoreno"
+
+[[params.socialIcons]]
+name = "twitter"
+url = "https://twitter.com/ldoreno"
+
+[[params.socialIcons]]
+name = "Rss"
+url = "index.xml"
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>review on Endeavor</title>
+    <link>https://aldoreno.github.io/categories/review/</link>
+    <description>Recent content in review on Endeavor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 13 Mar 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://aldoreno.github.io/categories/review/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Smartfren Haier CE81B on Ubuntu 12.04</title>
+      <link>https://aldoreno.github.io/posts/2014/03/13/smartfren-haier-ce81b-ubuntu-linux/</link>
+      <pubDate>Thu, 13 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://aldoreno.github.io/posts/2014/03/13/smartfren-haier-ce81b-ubuntu-linux/</guid>
+      <description>Setelah menghabiskan waktu berjam-jam, akhirnya bisa juga menggunakan modem yang satu ini di Ubuntu 12.04.
+Dari sekian banyak hasil pencarian Google, halaman yang satu ini yang akhirnya membuahkan hasil. Thanks!
+Berikut adalah beberapa catatan versi gw sendiri.
+Modem ini punya dua mode:
+mode penyimpanan (storage mode) yang biasanya akan aktif di Windows/OSX. apabila diakses dengan file manager, kita bisa mendapatkan installer software yang menangani modem modem (modem mode) yang akan aktif setelah mode penyimpanan dideaktif Pada lingkungan Windows/OSX, aplikasi modem yang kita install akan menangani deaktivasi mode penyimpanan, lalu mengaktivasi modem.</description>
+    </item>
+    
+  </channel>
+</rss>
