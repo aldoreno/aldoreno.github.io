@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>tips on Endeavor</title>
-    <link>http://aldoreno.github.io/categories/tips/</link>
+    <link>https://aldoreno.github.io/categories/tips/</link>
     <description>Recent content in tips on Endeavor</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://aldoreno.github.io/categories/tips/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://aldoreno.github.io/categories/tips/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Employee Stock Options Plan  ESOP</title>
-      <link>http://aldoreno.github.io/posts/2020/04/01/employee-stock-options-plan-esop/</link>
+      <link>https://aldoreno.github.io/posts/2020/04/01/employee-stock-options-plan-esop/</link>
       <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://aldoreno.github.io/posts/2020/04/01/employee-stock-options-plan-esop/</guid>
+      <guid>https://aldoreno.github.io/posts/2020/04/01/employee-stock-options-plan-esop/</guid>
       <description>Odi bilang liat ini saja
 https://twitter.com/tesseralis/status/1228516954941427712?s=21
 Gw coba &amp;ldquo;terjemahkan&amp;rdquo; isi tweet yang direferensikan Odi ya.
@@ -24,20 +24,20 @@ A stock option gives an investor the right, but not the obligation, to buy or se
     
     <item>
       <title>Apa itu High Availability?</title>
-      <link>http://aldoreno.github.io/posts/2015/11/21/apa-itu-high-availability/</link>
+      <link>https://aldoreno.github.io/posts/2015/11/21/apa-itu-high-availability/</link>
       <pubDate>Sat, 21 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://aldoreno.github.io/posts/2015/11/21/apa-itu-high-availability/</guid>
+      <guid>https://aldoreno.github.io/posts/2015/11/21/apa-itu-high-availability/</guid>
       <description>Selama ini gw pikir High Availability (HA) semata-mata hanya mempersiapkan cadangan kalau bencana (disaster) muncul. Mempersiapkan cadangan dalam artian data backup. Ternyata pemahaman tersebut tidak sepenuhnya benar. Hal ini baru gw sadari setelah diberikan pekerjaan untuk membuat solusi kalau sampai layanan telekomunikasi yang digunakan tim Customer Service (CS) kena bencana.
 Hasil akhir yang diharapkan &amp;ndash; ingat selalu untuk berpikir dari hasil akhir yang diharapkan -- adalah: tim CS harus selalu dapat menggunakan layanan telekomunikasi.</description>
     </item>
     
     <item>
       <title>Smartfren Haier CE81B on Ubuntu 12.04</title>
-      <link>http://aldoreno.github.io/posts/2014/03/13/smartfren-haier-ce81b-ubuntu-linux/</link>
+      <link>https://aldoreno.github.io/posts/2014/03/13/smartfren-haier-ce81b-ubuntu-linux/</link>
       <pubDate>Thu, 13 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://aldoreno.github.io/posts/2014/03/13/smartfren-haier-ce81b-ubuntu-linux/</guid>
+      <guid>https://aldoreno.github.io/posts/2014/03/13/smartfren-haier-ce81b-ubuntu-linux/</guid>
       <description>Setelah menghabiskan waktu berjam-jam, akhirnya bisa juga menggunakan modem yang satu ini di Ubuntu 12.04.
 Dari sekian banyak hasil pencarian Google, halaman yang satu ini yang akhirnya membuahkan hasil. Thanks!
 Berikut adalah beberapa catatan versi gw sendiri.
