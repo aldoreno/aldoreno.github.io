@@ -15,7 +15,7 @@ tags:
 
 Saya, teman kantor, dan temannya teman kantor camping di Gunung Papandayan pada akhir Juli 2016 lalu.
 
-\[caption id="attachment\_1598" align="aligncenter" width="660"\][![Gunung Cikurai dilihat dari atas Hutan Mati](images/IMG_20160731_061043_HDR-1024x768.jpg)](http://leonardo.situmorang.net/wp-content/uploads/2016/08/IMG_20160731_061043_HDR.jpg) Gunung Cikurai dilihat dari atas Hutan Mati\[/caption\]
+![Gunung Cikurai dilihat dari atas Hutan Mati](images/IMG_20160731_061043_HDR-1024x768.jpg)
 
 Sudah sangat banyak artikel di Internet mengenai perjalanan di Gunung Papandayan. Jadi sepertinya saya tidak perlu mengulang-ulang hal yang sama. Satu hal yang perlu digarisbawahi adalah: **_suhu di gunung ini teramat sangat dingin_**.
 
@@ -34,7 +34,7 @@ Kira-kira jam 5 pagi sudah mulai terdengar keramaian oleh mereka yang ingin menu
 
 Singkat cerita saya sampai di puncak lebih dulu. Meninggalkan teman-teman yang lain. Mungkin karena langkah kaki saya yang lebih panjang. Ternyata waktu tempuh dari Pondok Seladah ke puncak (Tegal Alun) tidak terlalu lama; kira-kira 30 sampai 45 menit. Cukup melelahkan dan membuat putus asa tapi sepertinya hampir semua perjalanan menuju puncak seperti itu. Intinya tetap melangkah saja walau perlahan sekalipun.
 
-\[caption id="attachment\_1591" align="aligncenter" width="660"\][![Tegal Alun](images/IMG_20160731_070306_2-1024x768.jpg)](http://leonardo.situmorang.net/wp-content/uploads/2016/08/IMG_20160731_070306_2.jpg) Tegal Alun\[/caption\]
+![Tegal Alun](images/IMG_20160731_070306_2-1024x768.jpg)
 
 Tegal Alun bisa dikatakan puncak Gunung Papandayan walau nyatanya ada bukit lagi di atasnya.
 
