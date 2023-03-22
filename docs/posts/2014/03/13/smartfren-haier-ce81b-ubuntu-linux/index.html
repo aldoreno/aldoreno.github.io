@@ -53,7 +53,7 @@
         },
         "datePublished": "2014-03-13",
         "description": "",
-        "wordCount":  1423 ,
+        "wordCount":  1555 ,
         "mainEntityOfPage": "True",
         "dateModified": "2014-03-13",
         "image": {
@@ -177,146 +177,317 @@ stroke-linejoin="round" class="feather feather-home">
 <p>Untuk 1 dan 2, kita dapat menggunakan perintah:</p>
 <p>sudo modprobe usbserial vendor=0x201e product=0x10f8</p>
 <p>Modprobe digunakan untuk menambahkan/mengeluarkan modul dari kernel Linux. Dalam hal ini kita memberi tahu kernel agar menggunakan modul usbserial  ketika mendeteksi modem CE81B. Tanpa perintah ini, CE81B akan menggunakan modul usb-storage  (penyimpanan dengan USB).</p>
-<p>Perhatian: perintah modprobe di atas dijalankan <em>*sebelum*</em> memasang CE81B di komputer. Jika CE81B sudah terpasang maka kernel akan menggunakan modul usb-storage dan perintah modprobe di atas jadi tidak berguna. Oleh karena itu, silahkan cabut CE81B, restart komputer, jalankan perintah modprobe di atas, lalu pasang CE81B ke komputer.</p>
+<p>Perhatian: perintah modprobe di atas dijalankan <em><em>sebelum</em></em> memasang CE81B di komputer. Jika CE81B sudah terpasang maka kernel akan menggunakan modul usb-storage dan perintah modprobe di atas jadi tidak berguna. Oleh karena itu, silahkan cabut CE81B, restart komputer, jalankan perintah modprobe di atas, lalu pasang CE81B ke komputer.</p>
 <p>Perhatikan nilai 0x201e  pada atribut vendor, dan nilai 0x10f8  pada atribut product. Nilai tersebut adalah identitas milik CE81B yang didapat dari perintah:</p>
-<p>➜ ~ lsusb
-Bus 002 Device 014: ID 201e:10f8
-➜ ~</p>
-<p>Gunakan perintah di bawah untuk memastikan bahwa kernel berhasil deaktivasi mode penyimpanan dan aktivasi mode modem:</p>
-<p>cat /var/log/syslog</p>
-<p>Cari output yang kira-kira seperti ini:</p>
-<p>Mar 14 00:53:03 endeavor kernel: [  756.504372] usb 2-1.2: new high-speed USB device number 13 using ehci_hcd
-Mar 14 00:53:03 endeavor mtp-probe: checking bus 2, device 13: &ldquo;/sys/devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.2&rdquo;
-Mar 14 00:53:03 endeavor mtp-probe: bus: 2, device: 13 was not an MTP device
-Mar 14 00:53:03 endeavor kernel: [  756.601156] scsi10 : usb-storage 2-1.2:1.0
-Mar 14 00:53:04 endeavor kernel: [  757.602271] scsi 10:0:0:0: CD-ROM            Haier    CD-ROM           2.31 PQ: 0 ANSI: 2
-Mar 14 00:53:04 endeavor kernel: [  757.605358] sr1: scsi-1 drive
-Mar 14 00:53:04 endeavor kernel: [  757.605559] sr 10:0:0:0: Attached scsi CD-ROM sr1
-Mar 14 00:53:04 endeavor kernel: [  757.605682] sr 10:0:0:0: Attached scsi generic sg2 type 5
-Mar 14 00:53:04 endeavor usb_modeswitch: switching device 05c6:f000 on 002/013
-Mar 14 00:53:04 endeavor kernel: [  758.096598] usb 2-1.2: USB disconnect, device number 13
-Mar 14 00:53:08 endeavor kernel: [  761.877580] usb 2-1.2: new high-speed USB device number 14 using ehci_hcd
-Mar 14 00:53:08 endeavor mtp-probe: checking bus 2, device 14: &ldquo;/sys/devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.2&rdquo;
-Mar 14 00:53:08 endeavor mtp-probe: bus: 2, device: 14 was not an MTP device
-Mar 14 00:53:08 endeavor kernel: [  761.973994] usbserial_generic 2-1.2:1.0: generic converter detected
-Mar 14 00:53:08 endeavor kernel: [  761.974110] usb 2-1.2: generic converter now attached to ttyUSB0
-Mar 14 00:53:08 endeavor kernel: [  761.974190] usbserial_generic 2-1.2:1.1: generic converter detected
-Mar 14 00:53:08 endeavor kernel: [  761.974266] usb 2-1.2: generic converter now attached to ttyUSB1
-Mar 14 00:53:08 endeavor kernel: [  761.974339] usbserial_generic 2-1.2:1.2: generic converter detected
-Mar 14 00:53:08 endeavor kernel: [  761.974417] usb 2-1.2: generic converter now attached to ttyUSB2
-Mar 14 00:53:08 endeavor kernel: [  761.974489] usbserial_generic 2-1.2:1.3: generic converter detected
-Mar 14 00:53:08 endeavor kernel: [  761.974563] usb 2-1.2: generic converter now attached to ttyUSB3
-Mar 14 00:53:08 endeavor kernel: [  761.974666] usbserial_generic 2-1.2:1.4: generic converter detected
-Mar 14 00:53:08 endeavor kernel: [  761.974788] usb 2-1.2: generic converter now attached to ttyUSB4
-Mar 14 00:53:08 endeavor modem-manager[927]:   (ttyUSB4) opening serial port&hellip;
-Mar 14 00:53:08 endeavor modem-manager[927]:   (ttyUSB2) opening serial port&hellip;
-Mar 14 00:53:08 endeavor modem-manager[927]:   (ttyUSB1) opening serial port&hellip;
-Mar 14 00:53:08 endeavor modem-manager[927]:   (ttyUSB0) opening serial port&hellip;
-Mar 14 00:53:08 endeavor modem-manager[927]:   (ttyUSB3) opening serial port&hellip;
-Mar 14 00:53:10 endeavor modem-manager[927]:   (ttyUSB2) closing serial port&hellip;
-Mar 14 00:53:10 endeavor modem-manager[927]:   (ttyUSB2) serial port closed
-Mar 14 00:53:10 endeavor modem-manager[927]:   (ttyUSB2) opening serial port&hellip;
-Mar 14 00:53:10 endeavor modem-manager[927]:   (Generic): CDMA modem /sys/devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.2 claimed port ttyUSB2
-Mar 14 00:53:10 endeavor modem-manager[927]:   (ttyUSB3) closing serial port&hellip;
-Mar 14 00:53:10 endeavor modem-manager[927]:   (ttyUSB3) serial port closed
-Mar 14 00:53:10 endeavor modem-manager[927]:   (Generic): CDMA modem /sys/devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.2 claimed port ttyUSB3
-Mar 14 00:53:10 endeavor modem-manager[927]:   (ttyUSB2) closing serial port&hellip;
-Mar 14 00:53:10 endeavor modem-manager[927]:   (ttyUSB2) serial port closed</p>
-<p>Baris 1 sampai 8 berisikan kernel yang mendeteksi CE81B, lalu awalnya menggunakan modul usb-storage . Pada baris 9 dan seterusnya, kita bisa lihat bahwa kernel memutuskan (disconnect) koneksi ke CE81B, lalu mendeteksi ulang, dan kali ini menggunakan usbserial.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">➜ ~ lsusb
+</span></span><span class="line"><span class="cl">Bus <span class="m">002</span> Device 014: ID 201e:10f8 
+</span></span><span class="line"><span class="cl">➜ ~
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Gunakan perintah di bawah untuk memastikan bahwa kernel berhasil deaktivasi mode penyimpanan dan aktivasi mode modem:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">cat /var/log/syslog
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Cari output yang kira-kira seperti ini:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">Mar <span class="m">14</span> 00:53:03 endeavor kernel: <span class="o">[</span>  756.504372<span class="o">]</span> usb 2-1.2: new high-speed USB device number <span class="m">13</span> using ehci_hcd
+</span></span><span class="line"><span class="cl">Mar <span class="m">14</span> 00:53:03 endeavor mtp-probe: checking bus 2, device 13: <span class="s2">&#34;/sys/devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.2&#34;</span>
+</span></span><span class="line"><span class="cl">Mar <span class="m">14</span> 00:53:03 endeavor mtp-probe: bus: 2, device: <span class="m">13</span> was not an MTP device
+</span></span><span class="line"><span class="cl">Mar <span class="m">14</span> 00:53:03 endeavor kernel: <span class="o">[</span>  756.601156<span class="o">]</span> scsi10 : usb-storage 2-1.2:1.0
+</span></span><span class="line"><span class="cl">Mar <span class="m">14</span> 00:53:04 endeavor kernel: <span class="o">[</span>  757.602271<span class="o">]</span> scsi 10:0:0:0: CD-ROM            Haier    CD-ROM           2.31 PQ: <span class="m">0</span> ANSI: <span class="m">2</span>
+</span></span><span class="line"><span class="cl">Mar <span class="m">14</span> 00:53:04 endeavor kernel: <span class="o">[</span>  757.605358<span class="o">]</span> sr1: scsi-1 drive
+</span></span><span class="line"><span class="cl">Mar <span class="m">14</span> 00:53:04 endeavor kernel: <span class="o">[</span>  757.605559<span class="o">]</span> sr 10:0:0:0: Attached scsi CD-ROM sr1
+</span></span><span class="line"><span class="cl">Mar <span class="m">14</span> 00:53:04 endeavor kernel: <span class="o">[</span>  757.605682<span class="o">]</span> sr 10:0:0:0: Attached scsi generic sg2 <span class="nb">type</span> <span class="m">5</span>
+</span></span><span class="line"><span class="cl">Mar <span class="m">14</span> 00:53:04 endeavor usb_modeswitch: switching device 05c6:f000 on 002/013
+</span></span><span class="line"><span class="cl">Mar <span class="m">14</span> 00:53:04 endeavor kernel: <span class="o">[</span>  758.096598<span class="o">]</span> usb 2-1.2: USB disconnect, device number <span class="m">13</span>
+</span></span><span class="line"><span class="cl">Mar <span class="m">14</span> 00:53:08 endeavor kernel: <span class="o">[</span>  761.877580<span class="o">]</span> usb 2-1.2: new high-speed USB device number <span class="m">14</span> using ehci_hcd
+</span></span><span class="line"><span class="cl">Mar <span class="m">14</span> 00:53:08 endeavor mtp-probe: checking bus 2, device 14: <span class="s2">&#34;/sys/devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.2&#34;</span>
+</span></span><span class="line"><span class="cl">Mar <span class="m">14</span> 00:53:08 endeavor mtp-probe: bus: 2, device: <span class="m">14</span> was not an MTP device
+</span></span><span class="line"><span class="cl">Mar <span class="m">14</span> 00:53:08 endeavor kernel: <span class="o">[</span>  761.973994<span class="o">]</span> usbserial_generic 2-1.2:1.0: generic converter detected
+</span></span><span class="line"><span class="cl">Mar <span class="m">14</span> 00:53:08 endeavor kernel: <span class="o">[</span>  761.974110<span class="o">]</span> usb 2-1.2: generic converter now attached to ttyUSB0
+</span></span><span class="line"><span class="cl">Mar <span class="m">14</span> 00:53:08 endeavor kernel: <span class="o">[</span>  761.974190<span class="o">]</span> usbserial_generic 2-1.2:1.1: generic converter detected
+</span></span><span class="line"><span class="cl">Mar <span class="m">14</span> 00:53:08 endeavor kernel: <span class="o">[</span>  761.974266<span class="o">]</span> usb 2-1.2: generic converter now attached to ttyUSB1
+</span></span><span class="line"><span class="cl">Mar <span class="m">14</span> 00:53:08 endeavor kernel: <span class="o">[</span>  761.974339<span class="o">]</span> usbserial_generic 2-1.2:1.2: generic converter detected
+</span></span><span class="line"><span class="cl">Mar <span class="m">14</span> 00:53:08 endeavor kernel: <span class="o">[</span>  761.974417<span class="o">]</span> usb 2-1.2: generic converter now attached to ttyUSB2
+</span></span><span class="line"><span class="cl">Mar <span class="m">14</span> 00:53:08 endeavor kernel: <span class="o">[</span>  761.974489<span class="o">]</span> usbserial_generic 2-1.2:1.3: generic converter detected
+</span></span><span class="line"><span class="cl">Mar <span class="m">14</span> 00:53:08 endeavor kernel: <span class="o">[</span>  761.974563<span class="o">]</span> usb 2-1.2: generic converter now attached to ttyUSB3
+</span></span><span class="line"><span class="cl">Mar <span class="m">14</span> 00:53:08 endeavor kernel: <span class="o">[</span>  761.974666<span class="o">]</span> usbserial_generic 2-1.2:1.4: generic converter detected
+</span></span><span class="line"><span class="cl">Mar <span class="m">14</span> 00:53:08 endeavor kernel: <span class="o">[</span>  761.974788<span class="o">]</span> usb 2-1.2: generic converter now attached to ttyUSB4
+</span></span><span class="line"><span class="cl">Mar <span class="m">14</span> 00:53:08 endeavor modem-manager<span class="o">[</span>927<span class="o">]</span>:   <span class="o">(</span>ttyUSB4<span class="o">)</span> opening serial port...
+</span></span><span class="line"><span class="cl">Mar <span class="m">14</span> 00:53:08 endeavor modem-manager<span class="o">[</span>927<span class="o">]</span>:   <span class="o">(</span>ttyUSB2<span class="o">)</span> opening serial port...
+</span></span><span class="line"><span class="cl">Mar <span class="m">14</span> 00:53:08 endeavor modem-manager<span class="o">[</span>927<span class="o">]</span>:   <span class="o">(</span>ttyUSB1<span class="o">)</span> opening serial port...
+</span></span><span class="line"><span class="cl">Mar <span class="m">14</span> 00:53:08 endeavor modem-manager<span class="o">[</span>927<span class="o">]</span>:   <span class="o">(</span>ttyUSB0<span class="o">)</span> opening serial port...
+</span></span><span class="line"><span class="cl">Mar <span class="m">14</span> 00:53:08 endeavor modem-manager<span class="o">[</span>927<span class="o">]</span>:   <span class="o">(</span>ttyUSB3<span class="o">)</span> opening serial port...
+</span></span><span class="line"><span class="cl">Mar <span class="m">14</span> 00:53:10 endeavor modem-manager<span class="o">[</span>927<span class="o">]</span>:   <span class="o">(</span>ttyUSB2<span class="o">)</span> closing serial port...
+</span></span><span class="line"><span class="cl">Mar <span class="m">14</span> 00:53:10 endeavor modem-manager<span class="o">[</span>927<span class="o">]</span>:   <span class="o">(</span>ttyUSB2<span class="o">)</span> serial port closed
+</span></span><span class="line"><span class="cl">Mar <span class="m">14</span> 00:53:10 endeavor modem-manager<span class="o">[</span>927<span class="o">]</span>:   <span class="o">(</span>ttyUSB2<span class="o">)</span> opening serial port...
+</span></span><span class="line"><span class="cl">Mar <span class="m">14</span> 00:53:10 endeavor modem-manager<span class="o">[</span>927<span class="o">]</span>:   <span class="o">(</span>Generic<span class="o">)</span>: CDMA modem /sys/devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.2 claimed port ttyUSB2
+</span></span><span class="line"><span class="cl">Mar <span class="m">14</span> 00:53:10 endeavor modem-manager<span class="o">[</span>927<span class="o">]</span>:   <span class="o">(</span>ttyUSB3<span class="o">)</span> closing serial port...
+</span></span><span class="line"><span class="cl">Mar <span class="m">14</span> 00:53:10 endeavor modem-manager<span class="o">[</span>927<span class="o">]</span>:   <span class="o">(</span>ttyUSB3<span class="o">)</span> serial port closed
+</span></span><span class="line"><span class="cl">Mar <span class="m">14</span> 00:53:10 endeavor modem-manager<span class="o">[</span>927<span class="o">]</span>:   <span class="o">(</span>Generic<span class="o">)</span>: CDMA modem /sys/devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.2 claimed port ttyUSB3
+</span></span><span class="line"><span class="cl">Mar <span class="m">14</span> 00:53:10 endeavor modem-manager<span class="o">[</span>927<span class="o">]</span>:   <span class="o">(</span>ttyUSB2<span class="o">)</span> closing serial port...
+</span></span><span class="line"><span class="cl">Mar <span class="m">14</span> 00:53:10 endeavor modem-manager<span class="o">[</span>927<span class="o">]</span>:   <span class="o">(</span>ttyUSB2<span class="o">)</span> serial port closed
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Baris 1 sampai 8 berisikan kernel yang mendeteksi CE81B, lalu awalnya menggunakan modul usb-storage . Pada baris 9 dan seterusnya, kita bisa lihat bahwa kernel memutuskan (disconnect) koneksi ke CE81B, lalu mendeteksi ulang, dan kali ini menggunakan usbserial.</p>
 <p>Perhatikan baris 32 dan 35 dimana CE81B diidentikasi sebagai modem CDMA dan dapat diakses melalui ttyUSB2 dan ttyUSB3.</p>
 <p>Di titik ini kita sudah berhasil mendeaktif mode penyimpanan, lalu mengaktifkan modem. Sekarang kita akan menggunakan wvdial untuk dapat untuk ber-Internet. Caranya:</p>
-<p>➜  ~  sudo wvdialconf
-Editing `/etc/wvdial.conf'.</p>
-<p>Scanning your serial ports for a modem.</p>
-<p>Modem Port Scan&lt;*1&gt;: S0   S1   S2   S3   S4   S5   S6   S7<br>
-Modem Port Scan&lt;*1&gt;: S8   S9   S10  S11  S12  S13  S14  S15<br>
-Modem Port Scan&lt;*1&gt;: S16  S17  S18  S19  S20  S21  S22  S23<br>
-Modem Port Scan&lt;*1&gt;: S24  S25  S26  S27  S28  S29  S30  S31<br>
-WvModem&lt;*1&gt;: Cannot get information for serial port.
-ttyUSB0&lt;*1&gt;: ATQ0 V1 E1 &ndash; failed with 2400 baud, next try: 9600 baud
-ttyUSB0&lt;*1&gt;: ATQ0 V1 E1 &ndash; failed with 9600 baud, next try: 9600 baud
-ttyUSB0&lt;*1&gt;: ATQ0 V1 E1 &ndash; and failed too at 115200, giving up.
-WvModem&lt;*1&gt;: Cannot get information for serial port.
-ttyUSB1&lt;*1&gt;: ATQ0 V1 E1 &ndash; failed with 2400 baud, next try: 9600 baud
-ttyUSB1&lt;*1&gt;: ATQ0 V1 E1 &ndash; failed with 9600 baud, next try: 9600 baud
-ttyUSB1&lt;*1&gt;: ATQ0 V1 E1 &ndash; and failed too at 115200, giving up.
-WvModem&lt;*1&gt;: Cannot get information for serial port.
-ttyUSB2&lt;*1&gt;: ATQ0 V1 E1 &ndash; OK
-ttyUSB2&lt;*1&gt;: ATQ0 V1 E1 Z &ndash; OK
-ttyUSB2&lt;*1&gt;: ATQ0 V1 E1 S0=0 &ndash; OK
-ttyUSB2&lt;*1&gt;: ATQ0 V1 E1 S0=0 &amp;C1 &ndash; OK
-ttyUSB2&lt;*1&gt;: ATQ0 V1 E1 S0=0 &amp;C1 &amp;D2 &ndash; OK
-ttyUSB2&lt;*1&gt;: ATQ0 V1 E1 S0=0 &amp;C1 &amp;D2 +FCLASS=0 &ndash; OK
-ttyUSB2&lt;*1&gt;: Modem Identifier: ATI &ndash; Manufacturer: Haier
-ttyUSB2&lt;*1&gt;: Speed 9600: AT &ndash; OK
-ttyUSB2&lt;*1&gt;: Max speed is 9600; that should be safe.
-ttyUSB2&lt;*1&gt;: ATQ0 V1 E1 S0=0 &amp;C1 &amp;D2 +FCLASS=0 &ndash; OK
-WvModem&lt;*1&gt;: Cannot get information for serial port.
-ttyUSB3&lt;*1&gt;: ATQ0 V1 E1 &ndash; OK
-ttyUSB3&lt;*1&gt;: ATQ0 V1 E1 Z &ndash; OK
-ttyUSB3&lt;*1&gt;: ATQ0 V1 E1 S0=0 &ndash; OK
-ttyUSB3&lt;*1&gt;: ATQ0 V1 E1 S0=0 &amp;C1 &ndash; OK
-ttyUSB3&lt;*1&gt;: ATQ0 V1 E1 S0=0 &amp;C1 &amp;D2 &ndash; OK
-ttyUSB3&lt;*1&gt;: ATQ0 V1 E1 S0=0 &amp;C1 &amp;D2 +FCLASS=0 &ndash; OK
-ttyUSB3&lt;*1&gt;: Modem Identifier: ATI &ndash; Manufacturer: Haier
-ttyUSB3&lt;*1&gt;: Speed 9600: AT &ndash; OK
-ttyUSB3&lt;*1&gt;: Max speed is 9600; that should be safe.
-ttyUSB3&lt;*1&gt;: ATQ0 V1 E1 S0=0 &amp;C1 &amp;D2 +FCLASS=0 &ndash; OK
-WvModem&lt;*1&gt;: Cannot get information for serial port.
-ttyUSB4&lt;*1&gt;: ATQ0 V1 E1 &ndash; failed with 2400 baud, next try: 9600 baud
-ttyUSB4&lt;*1&gt;: ATQ0 V1 E1 &ndash; failed with 9600 baud, next try: 9600 baud
-ttyUSB4&lt;*1&gt;: ATQ0 V1 E1 &ndash; and failed too at 115200, giving up.</p>
-<p>Found a modem on /dev/ttyUSB2.
-Modem configuration written to /etc/wvdial.conf.
-ttyUSB2: Speed 9600; init &ldquo;ATQ0 V1 E1 S0=0 &amp;C1 &amp;D2 +FCLASS=0&rdquo;
-ttyUSB3: Speed 9600; init &ldquo;ATQ0 V1 E1 S0=0 &amp;C1 &amp;D2 +FCLASS=0&rdquo;</p>
-<p>Perintah di atas akan mencari modem yang aktif, memberitahu nama file yang terasosiasi dengan modem tersebut, lalu membuatkan konfigurasi awal untuk modem. Konfigurasi tersebut tersedia di /etc/wvdial.conf</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">➜  ~  sudo wvdialconf
+</span></span><span class="line"><span class="cl">Editing <span class="sb">`</span>/etc/wvdial.conf<span class="err">&#39;</span>.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Scanning your serial ports <span class="k">for</span> a modem.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Modem Port Scan&lt;*1&gt;: S0   S1   S2   S3   S4   S5   S6   S7   
+</span></span><span class="line"><span class="cl">Modem Port Scan&lt;*1&gt;: S8   S9   S10  S11  S12  S13  S14  S15  
+</span></span><span class="line"><span class="cl">Modem Port Scan&lt;*1&gt;: S16  S17  S18  S19  S20  S21  S22  S23  
+</span></span><span class="line"><span class="cl">Modem Port Scan&lt;*1&gt;: S24  S25  S26  S27  S28  S29  S30  S31  
+</span></span><span class="line"><span class="cl">WvModem&lt;*1&gt;: Cannot get information <span class="k">for</span> serial port.
+</span></span><span class="line"><span class="cl">ttyUSB0&lt;*1&gt;: ATQ0 V1 E1 -- failed with <span class="m">2400</span> baud, next try: <span class="m">9600</span> baud
+</span></span><span class="line"><span class="cl">ttyUSB0&lt;*1&gt;: ATQ0 V1 E1 -- failed with <span class="m">9600</span> baud, next try: <span class="m">9600</span> baud
+</span></span><span class="line"><span class="cl">ttyUSB0&lt;*1&gt;: ATQ0 V1 E1 -- and failed too at 115200, giving up.
+</span></span><span class="line"><span class="cl">WvModem&lt;*1&gt;: Cannot get information <span class="k">for</span> serial port.
+</span></span><span class="line"><span class="cl">ttyUSB1&lt;*1&gt;: ATQ0 V1 E1 -- failed with <span class="m">2400</span> baud, next try: <span class="m">9600</span> baud
+</span></span><span class="line"><span class="cl">ttyUSB1&lt;*1&gt;: ATQ0 V1 E1 -- failed with <span class="m">9600</span> baud, next try: <span class="m">9600</span> baud
+</span></span><span class="line"><span class="cl">ttyUSB1&lt;*1&gt;: ATQ0 V1 E1 -- and failed too at 115200, giving up.
+</span></span><span class="line"><span class="cl">WvModem&lt;*1&gt;: Cannot get information <span class="k">for</span> serial port.
+</span></span><span class="line"><span class="cl">ttyUSB2&lt;*1&gt;: ATQ0 V1 E1 -- OK
+</span></span><span class="line"><span class="cl">ttyUSB2&lt;*1&gt;: ATQ0 V1 E1 Z -- OK
+</span></span><span class="line"><span class="cl">ttyUSB2&lt;*1&gt;: ATQ0 V1 E1 <span class="nv">S0</span><span class="o">=</span><span class="m">0</span> -- OK
+</span></span><span class="line"><span class="cl">ttyUSB2&lt;*1&gt;: ATQ0 V1 E1 <span class="nv">S0</span><span class="o">=</span><span class="m">0</span> <span class="p">&amp;</span>C1 -- OK
+</span></span><span class="line"><span class="cl">ttyUSB2&lt;*1&gt;: ATQ0 V1 E1 <span class="nv">S0</span><span class="o">=</span><span class="m">0</span> <span class="p">&amp;</span>C1 <span class="p">&amp;</span>D2 -- OK
+</span></span><span class="line"><span class="cl">ttyUSB2&lt;*1&gt;: ATQ0 V1 E1 <span class="nv">S0</span><span class="o">=</span><span class="m">0</span> <span class="p">&amp;</span>C1 <span class="p">&amp;</span>D2 +FCLASS<span class="o">=</span><span class="m">0</span> -- OK
+</span></span><span class="line"><span class="cl">ttyUSB2&lt;*1&gt;: Modem Identifier: ATI -- Manufacturer: Haier
+</span></span><span class="line"><span class="cl">ttyUSB2&lt;*1&gt;: Speed 9600: AT -- OK
+</span></span><span class="line"><span class="cl">ttyUSB2&lt;*1&gt;: Max speed is 9600<span class="p">;</span> that should be safe.
+</span></span><span class="line"><span class="cl">ttyUSB2&lt;*1&gt;: ATQ0 V1 E1 <span class="nv">S0</span><span class="o">=</span><span class="m">0</span> <span class="p">&amp;</span>C1 <span class="p">&amp;</span>D2 +FCLASS<span class="o">=</span><span class="m">0</span> -- OK
+</span></span><span class="line"><span class="cl">WvModem&lt;*1&gt;: Cannot get information <span class="k">for</span> serial port.
+</span></span><span class="line"><span class="cl">ttyUSB3&lt;*1&gt;: ATQ0 V1 E1 -- OK
+</span></span><span class="line"><span class="cl">ttyUSB3&lt;*1&gt;: ATQ0 V1 E1 Z -- OK
+</span></span><span class="line"><span class="cl">ttyUSB3&lt;*1&gt;: ATQ0 V1 E1 <span class="nv">S0</span><span class="o">=</span><span class="m">0</span> -- OK
+</span></span><span class="line"><span class="cl">ttyUSB3&lt;*1&gt;: ATQ0 V1 E1 <span class="nv">S0</span><span class="o">=</span><span class="m">0</span> <span class="p">&amp;</span>C1 -- OK
+</span></span><span class="line"><span class="cl">ttyUSB3&lt;*1&gt;: ATQ0 V1 E1 <span class="nv">S0</span><span class="o">=</span><span class="m">0</span> <span class="p">&amp;</span>C1 <span class="p">&amp;</span>D2 -- OK
+</span></span><span class="line"><span class="cl">ttyUSB3&lt;*1&gt;: ATQ0 V1 E1 <span class="nv">S0</span><span class="o">=</span><span class="m">0</span> <span class="p">&amp;</span>C1 <span class="p">&amp;</span>D2 +FCLASS<span class="o">=</span><span class="m">0</span> -- OK
+</span></span><span class="line"><span class="cl">ttyUSB3&lt;*1&gt;: Modem Identifier: ATI -- Manufacturer: Haier
+</span></span><span class="line"><span class="cl">ttyUSB3&lt;*1&gt;: Speed 9600: AT -- OK
+</span></span><span class="line"><span class="cl">ttyUSB3&lt;*1&gt;: Max speed is 9600<span class="p">;</span> that should be safe.
+</span></span><span class="line"><span class="cl">ttyUSB3&lt;*1&gt;: ATQ0 V1 E1 <span class="nv">S0</span><span class="o">=</span><span class="m">0</span> <span class="p">&amp;</span>C1 <span class="p">&amp;</span>D2 +FCLASS<span class="o">=</span><span class="m">0</span> -- OK
+</span></span><span class="line"><span class="cl">WvModem&lt;*1&gt;: Cannot get information <span class="k">for</span> serial port.
+</span></span><span class="line"><span class="cl">ttyUSB4&lt;*1&gt;: ATQ0 V1 E1 -- failed with <span class="m">2400</span> baud, next try: <span class="m">9600</span> baud
+</span></span><span class="line"><span class="cl">ttyUSB4&lt;*1&gt;: ATQ0 V1 E1 -- failed with <span class="m">9600</span> baud, next try: <span class="m">9600</span> baud
+</span></span><span class="line"><span class="cl">ttyUSB4&lt;*1&gt;: ATQ0 V1 E1 -- and failed too at 115200, giving up.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Found a modem on /dev/ttyUSB2.
+</span></span><span class="line"><span class="cl">Modem configuration written to /etc/wvdial.conf.
+</span></span><span class="line"><span class="cl">ttyUSB2: Speed 9600<span class="p">;</span> init <span class="s2">&#34;ATQ0 V1 E1 S0=0 &amp;C1 &amp;D2 +FCLASS=0&#34;</span>
+</span></span><span class="line"><span class="cl">ttyUSB3: Speed 9600<span class="p">;</span> init <span class="s2">&#34;ATQ0 V1 E1 S0=0 &amp;C1 &amp;D2 +FCLASS=0&#34;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Perintah di atas akan mencari modem yang aktif, memberitahu nama file yang terasosiasi dengan modem tersebut, lalu membuatkan konfigurasi awal untuk modem. Konfigurasi tersebut tersedia di /etc/wvdial.conf</p>
 <p>Modifikasi berkas wvdial.conf tersebut dengan informasi di bawah ini, cukup ganti nilai atribut modem  sesuai hasil  wvdialconfig di atas:</p>
-<p>[Dialer Defaults]
-Init1 = ATZ
-Init2 = ATQ0 V1 E1 S0=0 &amp;C1 &amp;D2 +FCLASS=0
-Stupid Mode = 1
-Modem Type = Analog Modem
-Command Line = ATDT
-ISDN = 0
-Password = smartfren
-New PPPD = yes
-Username = smartfren
-Phone = #777
-Modem = /dev/ttyUSB3
-Baud = 460800</p>
-<p>Simpan file wvdial.conf tersebut. Lalu jalankan perintah wvdial, seperti di bawah ini:</p>
-<p>➜  ~  sudo wvdial                                   <br>
-&ndash;&gt; WvDial: Internet dialer version 1.61
-&ndash;&gt; Cannot get information for serial port.
-&ndash;&gt; Initializing modem.
-&ndash;&gt; Sending: ATZ
-OK
-&ndash;&gt; Sending: ATQ0 V1 E1 S0=0 &amp;C1 &amp;D2 +FCLASS=0
-ATQ0 V1 E1 S0=0 &amp;C1 &amp;D2 +FCLASS=0
-OK
-&ndash;&gt; Modem initialized.
-&ndash;&gt; Sending: ATDT#777
-&ndash;&gt; Waiting for carrier.
-ATDT#777
-CONNECT 9300000
-&ndash;&gt; Carrier detected.  Starting PPP immediately.
-&ndash;&gt; Starting pppd at Fri Mar 14 02:28:46 2014
-&ndash;&gt; Pid of pppd: 10594
-&ndash;&gt; Using interface ppp0
-&ndash;&gt; pppd: k[7f]
-&ndash;&gt; pppd: k[7f]
-&ndash;&gt; pppd: k[7f]
-&ndash;&gt; pppd: k[7f]
-&ndash;&gt; local  IP address 10.196.233.0
-&ndash;&gt; pppd: k[7f]
-&ndash;&gt; remote IP address 10.17.95.21
-&ndash;&gt; pppd: k[7f]
-&ndash;&gt; primary   DNS address 10.17.118.187
-&ndash;&gt; pppd: k[7f]
-&ndash;&gt; secondary DNS address 10.17.118.251
-&ndash;&gt; pppd: k[7f]</p>
-
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">Dialer</span> <span class="nx">Defaults</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">Init1</span> <span class="p">=</span> <span class="nx">ATZ</span>
+</span></span><span class="line"><span class="cl"><span class="nx">Init2</span> <span class="p">=</span> <span class="nx">ATQ0</span> <span class="nx">V1</span> <span class="nx">E1</span> <span class="nx">S0</span><span class="p">=</span><span class="mi">0</span> <span class="err">&amp;</span><span class="nx">C1</span> <span class="err">&amp;</span><span class="nx">D2</span> <span class="err">+</span><span class="nx">FCLASS</span><span class="p">=</span><span class="mi">0</span>
+</span></span><span class="line"><span class="cl"><span class="nx">Stupid</span> <span class="nx">Mode</span> <span class="p">=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl"><span class="nx">Modem</span> <span class="nx">Type</span> <span class="p">=</span> <span class="nx">Analog</span> <span class="nx">Modem</span>
+</span></span><span class="line"><span class="cl"><span class="nx">Command</span> <span class="nx">Line</span> <span class="p">=</span> <span class="nx">ATDT</span>
+</span></span><span class="line"><span class="cl"><span class="nx">ISDN</span> <span class="p">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl"><span class="nx">Password</span> <span class="p">=</span> <span class="nx">smartfren</span>
+</span></span><span class="line"><span class="cl"><span class="nx">New</span> <span class="nx">PPPD</span> <span class="p">=</span> <span class="nx">yes</span>
+</span></span><span class="line"><span class="cl"><span class="nx">Username</span> <span class="p">=</span> <span class="nx">smartfren</span>
+</span></span><span class="line"><span class="cl"><span class="nx">Phone</span> <span class="p">=</span> <span class="c">#777</span>
+</span></span><span class="line"><span class="cl"><span class="nx">Modem</span> <span class="p">=</span> <span class="err">/</span><span class="nx">dev</span><span class="err">/</span><span class="nx">ttyUSB3</span>
+</span></span><span class="line"><span class="cl"><span class="nx">Baud</span> <span class="p">=</span> <span class="mi">460800</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Simpan file wvdial.conf tersebut. Lalu jalankan perintah wvdial, seperti di bawah ini:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">➜  ~  sudo wvdial                                      
+</span></span><span class="line"><span class="cl">--&gt; WvDial: Internet dialer version 1.61
+</span></span><span class="line"><span class="cl">--&gt; Cannot get information <span class="k">for</span> serial port.
+</span></span><span class="line"><span class="cl">--&gt; Initializing modem.
+</span></span><span class="line"><span class="cl">--&gt; Sending: ATZ
+</span></span><span class="line"><span class="cl">OK
+</span></span><span class="line"><span class="cl">--&gt; Sending: ATQ0 V1 E1 <span class="nv">S0</span><span class="o">=</span><span class="m">0</span> <span class="p">&amp;</span>C1 <span class="p">&amp;</span>D2 +FCLASS<span class="o">=</span><span class="m">0</span>
+</span></span><span class="line"><span class="cl">ATQ0 V1 E1 <span class="nv">S0</span><span class="o">=</span><span class="m">0</span> <span class="p">&amp;</span>C1 <span class="p">&amp;</span>D2 +FCLASS<span class="o">=</span><span class="m">0</span>
+</span></span><span class="line"><span class="cl">OK
+</span></span><span class="line"><span class="cl">--&gt; Modem initialized.
+</span></span><span class="line"><span class="cl">--&gt; Sending: ATDT#777
+</span></span><span class="line"><span class="cl">--&gt; Waiting <span class="k">for</span> carrier.
+</span></span><span class="line"><span class="cl">ATDT#777
+</span></span><span class="line"><span class="cl">CONNECT <span class="m">9300000</span>
+</span></span><span class="line"><span class="cl">--&gt; Carrier detected.  Starting PPP immediately.
+</span></span><span class="line"><span class="cl">--&gt; Starting pppd at Fri Mar <span class="m">14</span> 02:28:46 <span class="m">2014</span>
+</span></span><span class="line"><span class="cl">--&gt; Pid of pppd: <span class="m">10594</span>
+</span></span><span class="line"><span class="cl">--&gt; Using interface ppp0
+</span></span><span class="line"><span class="cl">--&gt; pppd: k<span class="o">[</span>7f<span class="o">]</span>
+</span></span><span class="line"><span class="cl">--&gt; pppd: k<span class="o">[</span>7f<span class="o">]</span>
+</span></span><span class="line"><span class="cl">--&gt; pppd: k<span class="o">[</span>7f<span class="o">]</span>
+</span></span><span class="line"><span class="cl">--&gt; pppd: k<span class="o">[</span>7f<span class="o">]</span>
+</span></span><span class="line"><span class="cl">--&gt; <span class="nb">local</span>  IP address 10.196.233.0
+</span></span><span class="line"><span class="cl">--&gt; pppd: k<span class="o">[</span>7f<span class="o">]</span>
+</span></span><span class="line"><span class="cl">--&gt; remote IP address 10.17.95.21
+</span></span><span class="line"><span class="cl">--&gt; pppd: k<span class="o">[</span>7f<span class="o">]</span>
+</span></span><span class="line"><span class="cl">--&gt; primary   DNS address 10.17.118.187
+</span></span><span class="line"><span class="cl">--&gt; pppd: k<span class="o">[</span>7f<span class="o">]</span>
+</span></span><span class="line"><span class="cl">--&gt; secondary DNS address 10.17.118.251
+</span></span><span class="line"><span class="cl">--&gt; pppd: k<span class="o">[</span>7f<span class="o">]</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
             </div>
         </article>
     </main>
