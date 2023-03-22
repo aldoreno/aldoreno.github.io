@@ -1,5 +1,5 @@
 title = "Endeavor"
-baseURL = 'http://localhost:1313/'
+baseURL = 'http://aldoreno.github.io/'
 languageCode = 'en-us'
 theme = "hugo-blog-awesome"
 
