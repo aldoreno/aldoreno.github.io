@@ -18,6 +18,8 @@ tags:
   - "penipuan"
   - "polisi"
   - "ubud"
+aliases:
+  - /2013/01/25/gm/
 ---
 
 > **Disclaimer** Tulisan dibuat semata-mata sebagai catatan bahwa saya pernah menjadi korban penipuan, dan tentunya dengan harapan agar catatan ini berguna bagi siapapun di masa depan yang kemungkinan terjebak dalam situasi yang sama dengan saya saat tulisan ini dibuat.
