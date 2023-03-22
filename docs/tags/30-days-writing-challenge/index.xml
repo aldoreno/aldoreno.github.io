@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>30-days-writing-challenge on Endeavor</title>
-    <link>https://aldoreno.github.io/tags/30-days-writing-challenge/</link>
+    <link>http://localhost:1313/tags/30-days-writing-challenge/</link>
     <description>Recent content in 30-days-writing-challenge on Endeavor</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 25 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://aldoreno.github.io/tags/30-days-writing-challenge/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 25 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/30-days-writing-challenge/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Day 2: A thing that makes me the happiest</title>
-      <link>https://aldoreno.github.io/posts/2020/09/25/day-2-a-thing-that-makes-me-the-happiest/</link>
+      <link>http://localhost:1313/posts/2020/09/25/day-2-a-thing-that-makes-me-the-happiest/</link>
       <pubDate>Fri, 25 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://aldoreno.github.io/posts/2020/09/25/day-2-a-thing-that-makes-me-the-happiest/</guid>
+      <guid>http://localhost:1313/posts/2020/09/25/day-2-a-thing-that-makes-me-the-happiest/</guid>
       <description>Gw baru hiking di umur 30. Dan pertama kali hiking langsung ke Gunung Agung di Bali. Kapan-kapan kuceritakan detailnya but it still feels like it was yesterday.
 Lalu, apakah naik gunung pertama kali lantas membuat happy? Oh tentu tidak. Malah kebalikannya; frustrasi berat karena tidak menyangka akan sesulit itu (walau rada bangga akhirnya bisa mengalahkan diri sendiri).
 Menurutku kebahagiaan naik gunung umumnya justru terasa ketika kita sudah kembali ke sumpeknya pekerjaan dan rutinitas hidup dan kerja.</description>

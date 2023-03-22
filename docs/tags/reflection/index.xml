@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>reflection on Endeavor</title>
-    <link>https://aldoreno.github.io/tags/reflection/</link>
+    <link>http://localhost:1313/tags/reflection/</link>
     <description>Recent content in reflection on Endeavor</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://aldoreno.github.io/tags/reflection/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 14 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/reflection/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Rasional</title>
-      <link>https://aldoreno.github.io/posts/2020/06/14/rasional/</link>
+      <link>http://localhost:1313/posts/2020/06/14/rasional/</link>
       <pubDate>Sun, 14 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://aldoreno.github.io/posts/2020/06/14/rasional/</guid>
+      <guid>http://localhost:1313/posts/2020/06/14/rasional/</guid>
       <description>Kepada langit
 Ini kami
 T yang tidak seimbang

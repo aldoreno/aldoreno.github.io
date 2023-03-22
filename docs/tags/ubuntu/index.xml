@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ubuntu on Endeavor</title>
-    <link>https://aldoreno.github.io/tags/ubuntu/</link>
+    <link>http://localhost:1313/tags/ubuntu/</link>
     <description>Recent content in ubuntu on Endeavor</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 13 Mar 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://aldoreno.github.io/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 13 Mar 2014 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Smartfren Haier CE81B on Ubuntu 12.04</title>
-      <link>https://aldoreno.github.io/posts/2014/03/13/smartfren-haier-ce81b-ubuntu-linux/</link>
+      <link>http://localhost:1313/posts/2014/03/13/smartfren-haier-ce81b-ubuntu-linux/</link>
       <pubDate>Thu, 13 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://aldoreno.github.io/posts/2014/03/13/smartfren-haier-ce81b-ubuntu-linux/</guid>
+      <guid>http://localhost:1313/posts/2014/03/13/smartfren-haier-ce81b-ubuntu-linux/</guid>
       <description>Setelah menghabiskan waktu berjam-jam, akhirnya bisa juga menggunakan modem yang satu ini di Ubuntu 12.04.
 Dari sekian banyak hasil pencarian Google, halaman yang satu ini yang akhirnya membuahkan hasil. Thanks!
 Berikut adalah beberapa catatan versi gw sendiri.
